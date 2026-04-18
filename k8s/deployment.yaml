@@ -17,8 +17,3 @@ spec:
           image: abhisheks0505/sports-planning-assistant:latest
           ports:
             - containerPort: 8501
-          env:
-            - name: OPENAI_API_KEY
-              value: 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
-            - name: SPORTS_API
-              value: https://www.thesportsdb.com/api/v1/json/123/searchteams.php?t=Arsenal
