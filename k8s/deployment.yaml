@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sports-ai-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sports-ai
+  template:
+    metadata:
+      labels:
+        app: sports-ai
+    spec:
+      containers:
+        - name: sports-ai-container
+          image: abhisheks0505/sports-planning-assistant:latest
+          ports:
+            - containerPort: 8501
+          
