@@ -28,6 +28,3 @@ spec:
                 secretKeyRef:
                   name: sports-api-secret
                   key: SPORTS_API_KEY
-          secretKeyRef:
-            name: sports-api-secret
-            key: SPORTS_API_KEY
