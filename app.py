@@ -151,7 +151,7 @@ def render_trace_content(text):
 
 
 st.set_page_config(
-    page_title="Sports Planning Assistant",
+    page_title="Sports Planning Assistant!",
     page_icon="🏆",
     layout="wide",
 )
