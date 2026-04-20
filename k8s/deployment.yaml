@@ -17,3 +17,17 @@ spec:
           image: abhisheks0505/sports-ai-app:latest
           ports:
             - containerPort: 8501
+          env:
+            - name: OPENAI_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: sports-api-secret
+                  key: OPENAI_API_KEY
+            - name: SPORTS_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: sports-api-secret
+                  key: SPORTS_API_KEY
+          secretKeyRef:
+            name: sports-api-secret
+            key: SPORTS_API_KEY
